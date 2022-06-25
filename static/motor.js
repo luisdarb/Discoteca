@@ -16,7 +16,7 @@ const changeLanguage = (lang) => {
 		iframe.setAttribute("src", `${languages[lang] === 'es' ? './static/img/videoesp.mp4' : './static/img/videoing.mp4'}`)
 	})
 	Array.from(document.getElementsByClassName('trans')).forEach(function (elem) {
-        if (elem.classList.contains('lang-' + lang)) {
+        if (elem.classList.contains('lang-' + languages[lang])) {
              elem.style.display = 'initial';
         }
         else {
