@@ -7,7 +7,8 @@
 	<title>Synthex</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<script src="./static/parallax.js"></script>
 </head>
@@ -16,17 +17,19 @@
 	<div class="welcome">
 		<div class="header">
 			<div class="container">
-				<a href="./index.html "><img src="./static/img/logo-06.png" class="logo" alt="Synthex logo" /></a>
+				<a style="z-index:100" href="./index.html "><img src="./static/img/logo-06.png" class="logo"
+						alt="Synthex logo" /></a>
 				<div class="links">
-					<a href="https://app.synthex.pro/#/login" class="button login">LOGIN</a>
+					<a style="z-index:100" href="https://app.synthex.pro/#/login" class="button login">LOGIN</a>
 
 					<div class="lang">
 						<div class="button">
 							<img id="language_flag" src="./static/img/españa.png" style="height:18px" class="flag" />
 							<span id="language_select">Español</span>
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.121 4.811">
-								<path id="chevron-down" d="M6,9l3,3,3-3" transform="translate(-4.939 -7.939)" fill="none" stroke="#fff"
-									stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+								<path id="chevron-down" d="M6,9l3,3,3-3" transform="translate(-4.939 -7.939)"
+									fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="1.5"></path>
 							</svg>
 						</div>
 						<div class="dropdown" id="langSelector">
@@ -35,6 +38,7 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 		<div class="container">
@@ -51,14 +55,57 @@
 				THAT IS GOING <br />
 				<b>TO REVOLUTIONIZE TRADING!</b>
 			</div>
+
 		</div>
+
 	</div>
-	</div>
+		
 	<div class="video-modal">
 		<div class="close"></div>
 		<iframe frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen></iframe>
+	</div>
+	<div style="display: grid; place-items: center;" class="banner">
+		<!-- TradingView Widget BEGIN -->
+		<div class="tradingview-widget-container">
+			<div class="tradingview-widget-container__widget"></div>
+			<script type="text/javascript"
+				src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+
+					{
+
+						"symbols": [
+							{
+								"proName": "FOREXCOM:SPXUSD",
+								"title": "S&P 500"
+							},
+							{
+								"proName": "FOREXCOM:NSXUSD",
+								"title": "US 100"
+							},
+							{
+								"proName": "FX_IDC:EURUSD",
+								"title": "EUR/USD"
+							},
+							{
+								"proName": "BITSTAMP:BTCUSD",
+								"title": "Bitcoin"
+							},
+							{
+								"proName": "BITSTAMP:ETHUSD",
+								"title": "Ethereum"
+							}
+						],
+							"showSymbolLogo": true,
+								"colorTheme": "dark",
+									"isTransparent": false,
+										"displayMode": "adaptive",
+											"locale": "en"
+					}
+				</script>
+		</div>
+		<!-- TradingView Widget END -->
 	</div>
 	<div class="about">
 		<div class="container">
@@ -68,25 +115,24 @@
 				data-rellax-percentage="0.6" />
 			<img src="./static/img/objeto flotante1.png" class="rellax obj obj-3" data-rellax-speed="-4"
 				data-rellax-percentage="0.6" />
-			<img src="./static/img/objeto flotante3.png" class="rellax obj obj-4" data-rellax-speed="-3"
-				data-rellax-percentage="0.5" />
+
 			<img src="./static/img/objeto flotante2.png" class="rellax obj obj-5" data-rellax-speed="-4"
 				data-rellax-percentage="0.5" />
-
-			<div class="image">
+			<div class="texto"
+				style="display: flex; align-items: center;justify-content: center;flex-direction: column; z-index: 100;">
 				<div class="text js-scroll slide-right">
-					<p class="trans lang-es">Mediante un exclusivo método, nuestros traders se han especializado en operar
+
+					<p class="trans lang-es">Mediante un exclusivo método, nuestros traders se han especializado en
+						operar
 						índices sintéticos para maximizar ganancias, independientemente de las tendencias del mercado.
 					</p>
 					<p class="trans lang-en">Through an exclusive method, our traders have specialized in operating
 						synthetic indices to maximize profits, regardless of market trends.
 					</p>
 				</div>
-				<img src="./static/img/parte 2 texto.png" class="parte2" alt="Parte2 Texto" />
+
+				<img id="language_project" class="parte2" alt="Parte2 Texto" />
 			</div>
-
-
-
 		</div>
 	</div>
 	<div class="proyecto">
@@ -105,7 +151,10 @@
 
 			<div class="image2">
 				<div class="text js-scroll slide-right">
-					<p class="trans lang-es">Hemos Construido los pilares de Synthex, para desarollar nuestro propio broker
+					<p class="trans lang-es">
+						<strong style="font-size: 30px; color: #15C4A3;">PROYECTO</strong>
+						</br></br>
+						Hemos Construido los pilares de Synthex, para desarollar nuestro propio broker
 						de sinteticos, forex, cripto, acciones e indices, commodities.
 						</br> </br>
 						De esta forma nuestra comunidad podrá operar en ella de forma independiente o en pool, para
@@ -114,9 +163,13 @@
 						ganancias, por dar a conocer el proyecto.
 						</br> </br><strong style="font-size: 30px;">¿ESTAS PREPARADO PARA EMPEZAR?</strong>
 					</p>
-					<p class="trans lang-en">We have built the pillars of Synthex, to develop our own broker for synthetics,
+					<p class="trans lang-en">
+						<strong style="font-size: 30px; color: #15C4A3;">PROJECT</strong>
+						</br></br>
+						We have built the pillars of Synthex, to develop our own broker for synthetics,
 						forex, crypto, stocks and indices, commodities.
-						</br> </br>In this way our community will be able to operate in it independently or in a pool, to multiply
+						</br> </br>In this way our community will be able to operate in it independently or in a pool,
+						to multiply
 						its capital efficiently. Synthex offers you the possibility of generating passive earnings and
 						enjoying an exclusive career plan that will allow you to generate extraordinary earnings, by
 						publicizing the project.
@@ -147,7 +200,10 @@
 				<img src="./static/img/bot SYNTHEX-12.png" class="bot" alt="Synthex bot" />
 			</div>
 			<div class="text js-scroll slide-right">
-				<p class="trans lang-es"> Gestión de capital, generamos ganancias para ofrécete un retorno de 250% del
+				<p class="trans lang-es">
+					<strong style="font-size: 30px; color: #15C4A3;">SERVICIOS</strong>
+					</br></br>
+					Gestión de capital, generamos ganancias para ofrécete un retorno de 250% del
 					paquete de inversión adquirido.
 					</br>
 					Ponemos a tu disposición nuestro bot de trading, que, de un modo conservador, genera benéficos en
@@ -156,7 +212,10 @@
 					</br>
 					Tarjeta de débito para monetizar tus ganancias en cualquier parte del mundo.
 				</p>
-				<p class="trans lang-en"> Capital management, we generate profits to offer you a return of 250% of the
+				<p class="trans lang-en">
+					<strong style="font-size: 30px; color: #15C4A3;">SERVICES</strong>
+					</br></br>
+					Capital management, we generate profits to offer you a return of 250% of the
 					investment package acquired.
 					</br>
 					We put at your disposal our trading bot, which, in a conservative way, automatically generates
@@ -167,33 +226,55 @@
 			</div>
 		</div>
 	</div>
-	<div class="footer">
-		<div class="container">
-			<p class="trans footer__text lang-es">
-				El <strong style="color: #15C4A3;">PODER</strong> DEL <strong style="color: #15C4A3;">TRAIDING</strong>
-				<p />
-			<p class="trans footer__text lang-en">
-				THE <strong style="color: #15C4A3;">POWER</strong> OF <strong style="color: #15C4A3;">TRAIDING</strong>
-				<p />
 
-			<div class="footer-division"></div>
+
+
+	<div class="footer">
+
+		<div class="container">
 			<div class="brand">
 				<a href="./index.html">
 					<img src="./static/img/logo_red.png" class="logo" alt="Quantum" />
 				</a>
-				<div class="links">
-					<a href="#" target="_blank" class="link telegram">
-						<svg xmlns="http://www.w3.org/2000/svg" width="68.485" height="56.496" viewBox="0 0 68.485 56.496">
-							<path id="Caminho_63" data-name="Caminho 63"
-								d="M405.185,1034.173a1.46,1.46,0,0,0-1-1.085,5.119,5.119,0,0,0-2.7.191s-60.006,21.568-63.433,23.956c-.738.515-.985.813-1.108,1.164-.593,1.7,1.254,2.45,1.254,2.45l15.466,5.039a1.69,1.69,0,0,0,.782-.047c3.518-2.223,35.4-22.354,37.237-23.03.291-.087.505.013.448.212-.737,2.583-28.426,27.2-28.426,27.2a1.35,1.35,0,0,0-.172.285l-.036-.021-1.443,15.341s-.6,4.7,4.095,0c3.316-3.316,6.524-6.09,8.13-7.44,5.318,3.671,11.041,7.733,13.51,9.857a4.293,4.293,0,0,0,3.133,1.208c2.345-.087,3-2.662,3-2.662s10.935-44.01,11.3-49.906c.036-.577.085-.946.089-1.343A4.963,4.963,0,0,0,405.185,1034.173Z"
-								transform="translate(-336.835 -1032.957)" fill="#15C4A3" />
-						</svg>
-						<div class="name">Join our<br />Telegram comunity.</div>
-					</a>
-				</div>
+				<p class="trans footer__text lang-es">
+					El <strong style="color: #15C4A3;">PODER</strong> DEL <strong
+						style="color: #15C4A3;">TRAIDING</strong>
+					<p />
+				<p class="trans footer__text lang-en">
+					THE <strong style="color: #15C4A3;">POWER</strong> OF <strong
+						style="color: #15C4A3;">TRAIDING</strong>
+					<p />
 			</div>
+
+
+
+
+
+			<div class="footer-division"></div>
+			<div class="links">
+				<a href="https://t.me/+njV2HPHajsM4Mzkx" target="_blank" class="link telegram">
+					<svg xmlns="http://www.w3.org/2000/svg" width="68.485" height="56.496" viewBox="0 0 68.485 56.496">
+						<path id="Caminho_63" data-name="Caminho 63"
+							d="M405.185,1034.173a1.46,1.46,0,0,0-1-1.085,5.119,5.119,0,0,0-2.7.191s-60.006,21.568-63.433,23.956c-.738.515-.985.813-1.108,1.164-.593,1.7,1.254,2.45,1.254,2.45l15.466,5.039a1.69,1.69,0,0,0,.782-.047c3.518-2.223,35.4-22.354,37.237-23.03.291-.087.505.013.448.212-.737,2.583-28.426,27.2-28.426,27.2a1.35,1.35,0,0,0-.172.285l-.036-.021-1.443,15.341s-.6,4.7,4.095,0c3.316-3.316,6.524-6.09,8.13-7.44,5.318,3.671,11.041,7.733,13.51,9.857a4.293,4.293,0,0,0,3.133,1.208c2.345-.087,3-2.662,3-2.662s10.935-44.01,11.3-49.906c.036-.577.085-.946.089-1.343A4.963,4.963,0,0,0,405.185,1034.173Z"
+							transform="translate(-336.835 -1032.957)" fill="#15C4A3" />
+					</svg>
+					<div class="name">Join our<br />Telegram comunity.</div>
+				</a>
+			</div>
+
 		</div>
-		<script src="./static/motor.js"></script>
+	</div>
+	<div class="copyright">
+		Copyright ©
+		<script>document.write(new Date().getFullYear())</script> Synthex
+	</div>
+
+
+
+
+
+
+	<script src="./static/motor.js"></script>
 </body>
 
 </html>
