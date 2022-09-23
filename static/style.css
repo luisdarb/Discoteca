@@ -302,7 +302,8 @@ body {
 
 
 .welcome .botones{
-	margin-top: 283px;
+	position: absolute;
+	bottom: 170px;
 	width: 100%;
 }
 .btn-neon{
@@ -426,17 +427,13 @@ body {
 
 
 .infotexto {
+	white-space: pre-line;
 	font-size: 20px;
 	color: white;
-    background: #222222;
+  background: #222222;
 	box-shadow: 0 0 20px 0 	#922cf1;
 	
 }
-
-.texto1, .texto2, .texto3 {
-
-}
-
 .btn-neon1:hover + .texto1 {
 display: block;
 }
