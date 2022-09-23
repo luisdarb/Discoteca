@@ -454,6 +454,13 @@ display: block;
 	.navbar-toggler-icon {
 		color: white;
 	}
+
+	.welcome .botones{
+		position: absolute;
+		bottom:0px;
+		width: 100%;
+		
+	}
 }
 .servicios .neonText {
 	color: #fff;
