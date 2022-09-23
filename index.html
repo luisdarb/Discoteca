@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link type="text/css" rel="stylesheet" href="./static/style.css" />
-	<title>Synthex</title>
+	<title>Neon Disco</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -12,7 +12,14 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<script src="./static/parallax.js"></script>
+
+	<!-- GOOGLE FONTs -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!-- ANIMATE CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
 <body>
@@ -23,322 +30,345 @@
 			<div class="col"> hola</div>
 		</div>
 	</div> -->
-	<div class="welcome">
+	<div class="welcome" id="welcome">
+		<video src="./static/img/fondovideo2.mp4" autoplay muted loop></video>
 		<div class="header">
 
 			<div class="row">
 				<div class="col-12 col-md-6 " style="display: grid; place-items: center;">
-					<a style="z-index:100" href="./index.html "><img src="./static/img/logo-06.png"
-							class="logo d-flex justify-content-center align-content-center" alt="Synthex logo" /></a>
+					<a style="z-index:100" href="./index.html "><img src="./static/img/Disco logo.png"
+							class="logo d-flex justify-content-center align-content-center" alt="Disco logo" /></a>
 				</div>
-				<div class="col-12 col-md-6 " style="display: grid; place-items: center;">
-					<div class="links">
-						<a style="z-index:100" href="https://app.synthex.pro/#/login" class="button login">LOGIN</a>
+				<div class="col" style="display: grid; place-items: center;">
 
-						<div class="lang">
-							<div class="button">
-								<img id="language_flag" src="./static/img/españa.png" style="height:18px"
-									class="flag" />
-								<span id="language_select">Español</span>
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.121 4.811">
-									<path id="chevron-down" d="M6,9l3,3,3-3" transform="translate(-4.939 -7.939)"
-										fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
-										stroke-width="1.5"></path>
-								</svg>
-							</div>
-							<div class="dropdown" id="langSelector">
-								<a onclick="changeLanguage('English')">English</a>
-								<a onclick="changeLanguage('Español')">Español</a>
-							</div>
+					<nav class="navbar navbar-expand-lg py-3 sticky-top navbar-light">
+
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ms-auto">
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#welcome">INICIO</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#proyecto">GALERIA</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white " href="#servicios">RESERVA MESA</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#mapa">Localizacion</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="#footer">Contacto</a>
+								</li>
+							</ul>
+
 						</div>
-					</div>
+
+					</nav>
+					<!-- //NAVBAR -->
 				</div>
 			</div>
 		</div>
 
-
+		<!-- 
 		<div class="row h-100 mt-4 mt-md-0">
-			<div class="col-12 col-md-6 " style="display: grid; place-items: center;">
-				<div class="video" style="background-image: url(./static/img/fondovideo.png)">
-					<img src="./static/img/play.png" alt="Play" class="play" />
-				</div>
-			</div>
-			<div class="col-12 col-md-6 " style="display: grid; place-items: center;">
-				<div class="text js-scroll fade-in trans lang-es" style="font-size: 3em;">
-					EL SISTEMA<br />
-					QUE VIENE<br />
-					<b>A REVOLUCIONAR EL TRADING!</b>
-				</div>
+
+			<div class=" vh-150 d- flex " style="display: grid; place-items: center;">
 				<div class="text  1js-scroll fade-in trans lang-en  " style="font-size: 3em;">
-					THE SYSTEM<br />
-					THAT IS GOING <br />
-					<b>TO REVOLUTIONIZE TRADING!</b>
+					QUE CHIMBA<br />
+					RUMBA - PLANCHA - KARAOKE <br />
+					<b>DIVERSION y EMOCION! </b>
 				</div>
 			</div>
 
-			<div class="video-modal">
-				<div class="close"></div>
-				<iframe frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen></iframe>
+
+
+
+		</div> -->
+
+		<div class="container row" style="margin-top: 280px; width: 40%;">
+			<div class="col-12 infotexto" id="textohover">
+				<p class="texto1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aliquam, magnam vero quae, eligendi rem	hic doloribus ducimus omnis dolores aliquid dicta maiores placeat! Repellat aliquid soluta rem 	fugiat suscipit!
+				</p>
+				<p class="texto2">sadddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+				</p>
+				<p class="texto3">cvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcvcv
+				</p>
 			</div>
+
+
+
+		</div>
+		<div class="botones row align-items-end">
+
+
+			<div class=" col-4 " style="display: grid; justify-content: end;">
+				<a href="#" class="btn-neon btn-neon1">
+					<span id="span1"></span>
+					<span id="span2"></span>
+					<span id="span3"></span>
+					<span id="span4"></span>
+					<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+						viewBox="0 0 248.914 248.914" style="enable-background:new 0 0 248.914 248.914"
+						xml:space="preserve">
+						<path
+							d="M201.711 49.583c-5.46 0-9.895 3.771-9.895 8.419 0 4.653 4.435 8.419 9.895 8.419 5.316 0 9.643-3.566 9.876-8.032 5.105-13.6 4.106-24.078 3.043-29.137-.747-3.533-4.2-6.295-7.851-6.295l-23.27-.01a6.881 6.881 0 0 0-4.9 2.03c-1.382 1.391-2.138 3.276-2.129 5.32.038 5.699-1.223 13.306-2.305 18.776a11.596 11.596 0 0 0-2.885-.364c-5.461 0-9.895 3.771-9.895 8.424 0 4.648 4.438 8.419 9.895 8.419 5.055 0 9.213-3.22 9.819-7.378l.075.019c.163-.653 3.826-15.523 4.079-26.453l20.898.009c.668 3.617 1.111 9.983-1.124 18.323a11.796 11.796 0 0 0-3.326-.489zM35.864 137.832c2.021 4.191 7.649 5.661 12.568 3.295 4.793-2.301 7.141-7.393 5.414-11.519-1.3-14.472-6.744-23.475-9.896-27.577-2.208-2.852-6.515-3.851-9.808-2.264l-20.969 10.085a6.848 6.848 0 0 0-3.533 3.958c-.644 1.849-.501 3.883.392 5.717 2.504 5.12 4.669 12.522 6.06 17.921-.921.183-1.851.485-2.753.925-4.917 2.366-7.273 7.687-5.255 11.877 2.021 4.191 7.645 5.666 12.569 3.295 4.548-2.188 6.9-6.902 5.642-10.906l.077-.015c-.133-.662-3.288-15.644-7.799-25.608l18.83-9.054c2.17 2.973 5.334 8.513 6.935 16.998a11.52 11.52 0 0 0-3.208.994c-4.928 2.366-7.284 7.688-5.266 11.878z" />
+						<circle cx="110.565" cy="38.136" r="21.004" />
+						<path
+							d="M14.337 232.868h220.239c7.921 0 14.338-6.272 14.338-14.021 0-7.747-6.417-14.024-14.338-14.024h-67.262c.393-.145.794-.28 1.176-.504a6.972 6.972 0 0 0 2.357-9.572l-39.278-65.017V97.62c17.88 16.139 26.523 41.985 26.677 42.457a6.98 6.98 0 0 0 8.775 4.489 6.96 6.96 0 0 0 4.494-8.773c-.588-1.807-12.661-38.261-39.969-55.697-.111-9.525-7.852-17.217-17.406-17.217h-7.159c-4.587 0-8.732 1.811-11.843 4.709-21.464-15.322-31.79-46.194-31.962-46.717-1.19-3.654-5.108-5.67-8.774-4.485a6.964 6.964 0 0 0-4.492 8.774c.581 1.801 12.564 37.98 39.642 55.501v55.791L76.045 160.15a6.956 6.956 0 0 0-.296 6.319L91.43 201.22c.793 1.76 2.245 2.978 3.918 3.603H14.337C6.419 204.823 0 211.105 0 218.848s6.419 14.02 14.337 14.02zm75.577-68.9 13.301-23.335h18.647l37.047 61.325c.845 1.396 2.114 2.338 3.528 2.87h-62.156c.119-.047.248-.065.367-.117 3.507-1.582 5.075-5.712 3.489-9.222l-14.223-31.521z" />
+					</svg>
+
+				</a>
+			</div>
+
+			<div class=" col-4 " style="display: grid; justify-content: center;" >
+
+				<a href="#" class="btn-neon btn-neon2">
+					<span id="span1"></span>
+					<span id="span2"></span>
+					<span id="span3"></span>
+					<span id="span4"></span>
+					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60" height="60"
+						fill="currentColor" viewBox="0 0 436.172 436.172"
+						style="enable-background:new 0 0 436.172 436.172;" xml:space="preserve">
+						<path d="M433.302,300.052c0.031-0.119,0.061-0.238,0.092-0.357c0.013-0.057,0.03-0.113,0.042-0.171
+	c1.784-7.04,2.736-14.408,2.736-21.995c0-7.587-0.952-14.955-2.736-21.995c-0.012-0.058-0.029-0.113-0.042-0.171
+	c-0.03-0.119-0.061-0.238-0.092-0.357c-0.045-0.174-0.086-0.349-0.141-0.518c-9.422-35.36-39.987-62.183-77.271-66.037
+	c-1.762-10.567-7.501-22.669-24.898-31.576c-5.368-2.748-11.76-5.136-19.199-7.172c-2.66-7.245-8.495-22.638-19.36-49.182
+	c-8.898-21.74-23.421-31.435-47.09-31.435H156.4c-5.523,0-10,4.477-10,10c0,5.523,4.477,10,10,10h88.943
+	c15.551,0,22.763,4.797,28.58,19.011c6.68,16.321,11.444,28.402,14.712,36.895c-18.996-2.812-42.41-4.202-70.55-4.202
+	c-54.833,0-91.765,5.262-112.906,16.085c-17.398,8.907-23.137,21.009-24.899,31.576c-37.286,3.854-67.851,30.68-77.272,66.042
+	c-0.05,0.158-0.088,0.322-0.131,0.483c-0.037,0.141-0.073,0.281-0.109,0.422c-0.01,0.044-0.023,0.087-0.032,0.131
+	C0.952,262.571,0,269.941,0,277.529c0,7.589,0.952,14.959,2.737,22c0.009,0.043,0.022,0.084,0.031,0.126
+	c0.037,0.143,0.073,0.287,0.111,0.43c0.042,0.16,0.08,0.322,0.13,0.479c10.191,38.254,45.128,66.521,86.548,66.521h257.059
+	c41.418,0,76.354-28.264,86.546-66.516C433.216,300.401,433.257,300.225,433.302,300.052z M114.294,174.678
+	c18-9.215,52.92-13.888,103.792-13.888c50.872,0,85.792,4.673,103.792,13.888c7.75,3.968,11.58,8.211,13.356,13.295H100.938
+	C102.714,182.889,106.545,178.645,114.294,174.678z M346.615,347.086H89.557c-27.617,0-51.523-16.18-62.745-39.557h253.275
+	c5.523,0,10-4.477,10-10c0-5.523-4.477-10-10-10H20.729c-0.473-3.267-0.729-6.604-0.729-10c0-3.396,0.257-6.733,0.729-10h97.024
+	c5.523,0,10-4.477,10-10c0-5.523-4.477-10-10-10H26.811c11.222-23.377,35.129-39.557,62.746-39.557h257.058
+	c27.617,0,51.523,16.18,62.745,39.557H156.086c-5.523,0-10,4.477-10,10c0,5.523,4.477,10,10,10h259.357
+	c0.473,3.267,0.729,6.604,0.729,10c0,3.396-0.257,6.733-0.729,10h-97.024c-5.522,0-10,4.477-10,10c0,5.523,4.478,10,10,10h90.942
+	C398.138,330.906,374.232,347.086,346.615,347.086z" />
+					</svg>
+				</a>
+			</div>
+
+			<div class=" col-4 ">
+				<a href="#" class="btn-neon btn-neon3">
+
+
+					<span id="span1"></span>
+					<span id="span2"></span>
+					<span id="span3"></span>
+					<span id="span4"></span>
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+						style="enable-background:new 0 0 512 512;" xml:space="preserve" width="60" height="60"
+						fill="currentColor">
+						<g>
+							<g>
+								<path d="M366.833,34.157C344.807,12.131,315.484,0,284.259,0c-20.065,0-39.316,5.074-56.383,14.506l158.609,158.614
+						   c9.43-17.068,14.504-36.321,14.504-56.389C400.99,85.506,388.859,56.183,366.833,34.157z" />
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M201.07,34.877c-14.48,14.72-24.559,32.837-29.649,52.43l142.263,142.268c19.594-5.092,37.715-15.169,52.43-29.648
+						   L201.07,34.877z" />
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M162.38,125.447L47.16,276.627c-12.887,17.187-14.25,40.068-4.822,58.437L5.097,372.309
+						   c-6.516,6.516-6.516,17.078,0,23.589c3.259,3.259,7.527,4.888,11.794,4.888s8.537-1.629,11.794-4.888l37.239-37.243
+						   c7.894,4.053,16.621,6.117,25.383,6.117c11.632-0.006,23.307-3.628,33.157-11.012l151.089-115.137L162.38,125.447z
+							M166.975,257.61c-3.259,3.253-7.527,4.882-11.794,4.882c-4.267,0-8.537-1.629-11.794-4.888c-6.516-6.516-6.516-17.078,0-23.595
+						   l23.601-23.589c6.516-6.506,17.073-6.51,23.589,0.006s6.516,17.078,0,23.595L166.975,257.61z" />
+							</g>
+						</g>
+						<g>
+							<g>
+								<path d="M504.46,203.469c-4.583-3.101-10.404-3.741-15.542-1.673l-166.82,66.728c-6.342,2.53-10.492,8.667-10.492,15.488v163.309
+						   c-5.243-1.247-10.803-2.05-16.682-2.05c-27.596,0-50.046,14.966-50.046,33.364S267.327,512,294.924,512
+						   c27.597,0,50.046-14.966,50.046-33.364c0-0.761,0-149.967,0-149.967l133.456-53.38v116.426c-5.243-1.247-10.803-2.05-16.682-2.05
+						   c-27.596,0-50.046,14.966-50.046,33.364s22.45,33.364,50.046,33.364s50.046-14.966,50.046-33.364c0-0.761,0-205.745,0-205.745
+						   C511.791,211.75,509.043,206.576,504.46,203.469z" />
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+
+
 		</div>
 
 	</div>
 
 
-	<div style="display: grid; place-items: center;" class="banner">
-		<!-- TradingView Widget BEGIN -->
-		<div class="tradingview-widget-container">
-			<div class="tradingview-widget-container__widget"></div>
-			<script type="text/javascript"
-				src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-
-					{
-
-						"symbols": [
-							{
-								"proName": "FOREXCOM:SPXUSD",
-								"title": "S&P 500"
-							},
-							{
-								"proName": "FOREXCOM:NSXUSD",
-								"title": "US 100"
-							},
-							{
-								"proName": "FX_IDC:EURUSD",
-								"title": "EUR/USD"
-							},
-							{
-								"proName": "BITSTAMP:BTCUSD",
-								"title": "Bitcoin"
-							},
-							{
-								"proName": "BITSTAMP:ETHUSD",
-								"title": "Ethereum"
-							}
-						],
-							"showSymbolLogo": true,
-								"colorTheme": "dark",
-									"isTransparent": false,
-										"displayMode": "adaptive",
-											"locale": "en"
-					}
-				</script>
+	<div class="proyecto" id="proyecto">
+		<div class="container">
+			<div class="taggbox" style="width:100%;height:100%;" data-widget-id="108185" data-tags="false"></div>
+			<script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
 		</div>
-		<!-- TradingView Widget END -->
 	</div>
-	<div class="about">
+
+
+	<div class="servicios" id="servicios">
 		<div class="container">
 
-			<div class="row justify-content-center pt-5">
 
-				<img src="./static/img/objeto flotante3.png" class="rellax obj obj-1 d-none d-sm-block"
-					data-rellax-speed="-2" data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante2.png" class="rellax obj obj-2 d-none d-sm-block"
-					data-rellax-speed="-3" data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante1.png" class="rellax obj obj-3 d-none d-sm-block"
-					data-rellax-speed="-4" data-rellax-percentage="0.6" />
+			<div class="content">
 
-				<img src="./static/img/objeto flotante2.png" class="rellax obj obj-5 d-none d-xl-block"
-					data-rellax-speed="-4" data-rellax-percentage="0.5" />
+				<h1 class="logo">Reserva <span>Mesa</span></h1>
 
-				<div class="col-12" style=" display:grid; place-items:center;">
-					<div class="text js-scroll slide-right p-0 m-0">
-
-						<p class="trans fonts lang-es">Mediante un exclusivo método, nuestros traders se han especializado
-							en
-							operar
-							índices sintéticos para maximizar ganancias, independientemente de las tendencias del
-							mercado.
-						</p>
-						<p class="trans fonts lang-en">Through an exclusive method, our traders have specialized in
-							operating
-							synthetic indices to maximize profits, regardless of market trends.
-						</p>
+				<div class="contact-wrapper animated bounceInUp">
+					<div class="contact-form">
+						<h3>Solicita tu reserva</h3>
+						<form action="https://formsubmit.co/luisda.rb@gmail.com" method="POST">
+							<p>
+								<label>Nombre Completo</label>
+								<input type="text" name="fullname">
+							</p>
+							<p>
+								<label>Correo electronico</label>
+								<input type="email" name="email">
+							</p>
+							<p>
+								<label>Telefono</label>
+								<input type="tel" name="phone">
+							</p>
+							<p>
+								<label>Numero de personas</label>
+								<input type="text" name="affair">
+							</p>
+							<p class="block">
+								<label>Mesa</label>
+								<input type="text " name="message">
+							<p class="block">
+								<button>
+									Enviar
+								</button>
+							</p>
+						</form>
 					</div>
-					<img id="language_project" class="parte2 img-fluid " alt="Parte2 Texto" />
-
-				</div>
-			</div>
-
-		</div>
-	</div>
-	</div>
-
-
-
-	<div class="proyecto">
-		<div class="container">
-
-			<div class="row ">
-
-				<img src="./static/img/objeto flotante3.png" class="rellax obj obj-1 d-none d-xl-block"
-					data-rellax-speed="-2" data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante2.png" class="rellax obj obj-2 d-none d-xl-block"
-					data-rellax-speed="-3" data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante1.png" class="rellax obj obj-3 d-none d-lg-block"
-					data-rellax-speed="-4" data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante3.png" class="rellax obj obj-4 d-none d-lg-block"
-					data-rellax-speed="-3" data-rellax-percentage="0.5" />
-				<img src="./static/img/objeto flotante2.png" class="rellax obj obj-5 d-none d-lg-block"
-					data-rellax-speed="-4" data-rellax-percentage="0.5" />
-
-				<div class="col-12 col-xl-6 " style="display: grid; place-items: center;">
-
-					<div class="text js-scroll slide-right d-flex justify-content-center "
-						>
-						<p class="trans fonts lang-es">
-							<strong style="font-size: 30px; color: #15C4A3;">PROYECTO</strong>
-							</br></br>
-							Hemos Construido los pilares de Synthex, para desarollar nuestro propio broker
-							de sinteticos, forex, cripto, acciones e indices, commodities.
-							</br> </br>
-							De esta forma nuestra comunidad podrá operar en ella de forma independiente o en pool,
-							para
-							multiplicar su capital de forma eficiente. Synthex te ofrece la posibilidad de generar
-							ganancias
-							pasivas y disfrutar de un exclusivo plan de carrera que te permitirá generar
-							extraordinarias
-							ganancias, por dar a conocer el proyecto.
-							</br> </br><strong style="font-size: 30px;">¿ESTAS PREPARADO PARA EMPEZAR?</strong>
-						</p>
-						<p class="trans fonts lang-en">
-							<strong style="font-size: 30px; color: #15C4A3;">PROJECT</strong>
-							</br></br>
-							We have built the pillars of Synthex, to develop our own broker for synthetics,
-							forex, crypto, stocks and indices, commodities.
-							</br> </br>In this way our community will be able to operate in it independently or in a
-							pool,
-							to multiply
-							its capital efficiently. Synthex offers you the possibility of generating passive
-							earnings
-							and
-							enjoying an exclusive career plan that will allow you to generate extraordinary
-							earnings, by
-							publicizing the project.
-							</br>
-							</br>
-							<strong style="font-size: 30px;">¿ARE YOU READY TO GET STARTED?</strong>
-						</p>
-					</div>
-
-				</div>
-				<div class="col-12 col-xl-6" style="display: grid; place-items: center;">
-					<img src="./static/img/web parte 2.png" class="man img-fluid" alt="Synthex Man" />
-				</div>
-
-
-
-			</div>
-		</div>
-	</div>
-	</div>
-
-	<div class="servicios">
-		<div class="container">
-
-			<div class="row">
-				<img src="./static/img/objeto flotante1.png" class="rellax obj obj-1" data-rellax-speed="-2"
-					data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante3.png" class="rellax obj obj-2" data-rellax-speed="-3"
-					data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante2.png" class="rellax obj obj-3" data-rellax-speed="-4"
-					data-rellax-percentage="0.6" />
-				<img src="./static/img/objeto flotante1.png" class="rellax obj obj-4" data-rellax-speed="-3"
-					data-rellax-percentage="0.5" />
-				<div class="col-12 col-lg-6" style="display: grid; place-items: center;">
-
-					<img src="./static/img/bot SYNTHEX-12.png" class="bot img-fluid" alt="Synthex bot" />
-
-				</div>
-				<div class="col-12 col-lg-6" style="display: grid; place-items: center;">
-					<div class="text js-scroll slide-right">
-						<p class="trans fonts lang-es">
-							<strong style="font-size: 30px; color: #15C4A3;">SERVICIOS</strong>
-							</br></br>
-							Gestión de capital, generamos ganancias para ofrécete un retorno de 250% del
-							paquete de inversión adquirido.
-							</br>
-							Ponemos a tu disposición nuestro bot de trading, que, de un modo conservador, genera
-							benéficos en
-							automática operando desde un bróker regulado, con un sistema de ganancias residuales dentro
-							del
-							bróker.
-							</br>
-							Tarjeta de débito para monetizar tus ganancias en cualquier parte del mundo.
-						</p>
-						<p class="trans fonts lang-en">
-							<strong style="font-size: 30px; color: #15C4A3;">SERVICES</strong>
-							</br></br>
-							Capital management, we generate profits to offer you a return of 250% of the
-							investment package acquired.
-							</br>
-							We put at your disposal our trading bot, which, in a conservative way, automatically
-							generates
-							profits by operating from a regulated broker, with a system of residual profits within the
-							broker.
-							</br>
-							Debit card to monetize your earnings anywhere in the world.
-						</p>
+					<div class="contact-info">
+						<h4>Informacion de contacto</h4>
+						<ul>
+							<li><i class="fas fa-map-marker-alt"></i> Baker Street</li>
+							<li><i class="fas fa-phone"></i> (111) 111 111 111</li>
+							<li><i class="fas fa-envelope-open-text"></i> contact@website.com</li>
+						</ul>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident ipsam
+							necessitatibus repellendus?</p>
+						<p>Company.com</p>
 					</div>
 				</div>
+
 			</div>
+
+			<!-- <div class="col-12 col-lg-6" style="display: grid; place-items: center;">
+				<div class="neonText">
+					<p>
+						<strong style="font-size: 30px; color: #c501e2;">RESERVA DE MESAS</strong>
+
+					</p>
+				</div>
+			</div> -->
 		</div>
+	</div>
 	</div>
 
 
-
-	<div class="footer">
+	<iframe id="mapa"
+		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.4570187130043!2d-0.36100827803103946!3d39.45900293463969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048c3ee225aab%3A0x3bd958491d327b6a!2sC.%20Godofredo%20Ros%2C%204%2C%2046004%20Valencia%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sco!4v1663538510343!5m2!1ses!2sco"
+		width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+		referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<div class="footer" id="footer">
 
 		<div class="container">
-			<div class="row">
+			<div class="row justify-content-around" style="width: 77%;	align-items: center;">
 
 
-				<div class="col-12 col-md-6" style="display: grid; place-items: center;">
+				<div class="col-12 col-md-4" style="display: grid; place-items: center;">
 					<a href="./index.html">
-						<img src="./static/img/logo_red.png" class="logo" alt="Synhex" />
+						<img src="./static/img/Disco logo2.png" class="logo" alt="Disco" />
 					</a>
 				</div>
-				<div class="col-12 col-md-6" style="display: grid; place-items: center;">
-					<p class="trans footer__text lang-es">
-						El <strong style="color: #15C4A3;">PODER</strong> DEL <strong
-							style="color: #15C4A3;">TRAIDING</strong>
-						<p />
-					<p class="trans footer__text lang-en">
-						THE <strong style="color: #15C4A3;">POWER</strong> OF <strong
-							style="color: #15C4A3;">TRAIDING</strong>
-						<p />
+				<div class="text col-12 col-md-4" style="display: grid; place-items: center; text-align: center;">
+					<p class="trans footer__text">
+						<strong>LA MEJOR DISCOTECA</strong>
+					</p>
+
+
 				</div>
 
 			</div>
 
-			<div class="row">
 
 
-				<div class="footer-division"></div>
 
-				<div class="col">
-					<div class="links">
-						<a href="https://t.me/+njV2HPHajsM4Mzkx" target="_blank" class="link telegram">
-							<svg xmlns="http://www.w3.org/2000/svg" width="68.485" height="56.496"
-								viewBox="0 0 68.485 56.496">
-								<path id="Caminho_63" data-name="Caminho 63"
-									d="M405.185,1034.173a1.46,1.46,0,0,0-1-1.085,5.119,5.119,0,0,0-2.7.191s-60.006,21.568-63.433,23.956c-.738.515-.985.813-1.108,1.164-.593,1.7,1.254,2.45,1.254,2.45l15.466,5.039a1.69,1.69,0,0,0,.782-.047c3.518-2.223,35.4-22.354,37.237-23.03.291-.087.505.013.448.212-.737,2.583-28.426,27.2-28.426,27.2a1.35,1.35,0,0,0-.172.285l-.036-.021-1.443,15.341s-.6,4.7,4.095,0c3.316-3.316,6.524-6.09,8.13-7.44,5.318,3.671,11.041,7.733,13.51,9.857a4.293,4.293,0,0,0,3.133,1.208c2.345-.087,3-2.662,3-2.662s10.935-44.01,11.3-49.906c.036-.577.085-.946.089-1.343A4.963,4.963,0,0,0,405.185,1034.173Z"
-									transform="translate(-336.835 -1032.957)" fill="#15C4A3" />
-							</svg>
-							<div class="name">Join our<br />Telegram comunity.</div>
-						</a>
-					</div>
+			<div class="footer-division"></div>
+
+
+			<div class="links row">
+				<div class="col-3 col-md-3">
+					<a href="https://www.facebook.com/" target="_blank" class="link telegram">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+							class="bi bi-facebook" viewBox="0 0 16 16">
+							<path
+								d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+						</svg>
+						</svg>
+
+					</a>
 				</div>
+				<div class="col-3 col-md-3">
+					<a href="https://www.instagram.com/" target="_blank" class="link instagram">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+							viewBox="0 0 16 16">
+							<path id="Caminho_63" data-name="Caminho 63"
+								d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+						</svg>
 
 
+					</a>
+				</div>
+				<div class="col-3 col-md-3">
+					<a href="https://www.instagram.com/" target="_blank" class="link instagram">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+							class="bi bi-whatsapp" viewBox="0 0 16 16">
+							<path
+								d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+						</svg>
+
+
+					</a>
+				</div>
+				<div class="col-3 col-md-3">
+					<a href="https://www.instagram.com/" target="_blank" class="link instagram">
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+							class="bi bi-tiktok" viewBox="0 0 16 16">
+							<path
+								d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z" />
+						</svg>
+
+
+					</a>
+				</div>
 			</div>
+
+
 		</div>
 		<div class="col">
 			<div class="copyright">
 				Copyright ©
-				<script>document.write(new Date().getFullYear())</script> Synthex
+				<script>document.write(new Date().getFullYear())</script> Que Chimba
 			</div>
 		</div>
 	</div>
